@@ -1,17 +1,17 @@
-# 🌟 CharityML Donor Prediction
+# CharityML Donor Prediction
 
 ![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-notebook-orange.svg)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-0.24+-yellow.svg)
 
-## 📖 Project Overview
+## Project Overview
 Welcome to the **CharityML Donor Prediction** project! This project applies supervised machine learning techniques to a modified U.S. Census dataset to predict whether an individual earns more than $50,000 annually. 
 
 Understanding an individual's income bracket helps non-profit organizations like CharityML better determine their donation target audience, significantly reducing the overhead costs of sending outreach emails to the wrong candidates.
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 - [Technologies Used](#-technologies-used)
 - [Project Directory Structure](#-project-directory-structure)
 - [The Dataset](#-the-dataset)
@@ -21,7 +21,7 @@ Understanding an individual's income bracket helps non-profit organizations like
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 - **Python 3.x**
 - **Pandas** (Data manipulation and analysis)
 - **NumPy** (Numerical computing)
@@ -31,7 +31,7 @@ Understanding an individual's income bracket helps non-profit organizations like
 
 ---
 
-## 📂 Project Directory Structure
+## Project Directory Structure
 
 ```text
 CharityML Donor Prediction/
@@ -64,7 +64,7 @@ CharityML Donor Prediction/
 
 ---
 
-## 📊 The Dataset
+## The Dataset
 The modified census dataset consists of approximately **32k data points**, with each data point having **13 features**. This dataset is a modified version of the dataset published in the paper *"Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid"* by Ron Kohavi (1996). 
 
 ### Target Variable
@@ -87,7 +87,7 @@ The modified census dataset consists of approximately **32k data points**, with 
 
 ---
 
-## 🚀 Setup & Installation
+## Setup & Installation
 
 **1. Clone the repository:**
 ```bash
@@ -108,7 +108,7 @@ pip install -r requirements.txt
 
 ---
 
-## 💻 Usage
+## Usage
 
 To run the interactive Jupyter Notebook and view the analysis, execute the following command in the terminal from the `notebooks` directory:
 
@@ -119,7 +119,7 @@ jupyter notebook final_project.ipynb
 
 ---
 
-## 🏆 Results & Evaluation
+## Results & Evaluation
 *To be updated once final model evaluation is complete.* 
 
 The primary metric used for evaluating the models in this project is the **F-beta score** (with beta = 0.5), which puts more emphasis on precision over recall, ensuring that CharityML does not waste resources reaching out to individuals who are highly unlikely to donate.
