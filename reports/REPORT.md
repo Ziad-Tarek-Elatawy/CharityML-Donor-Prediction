@@ -37,3 +37,6 @@
 
 ## 11. Conclusion
 > Summarize the findings, the business impact for CharityML, and potential future improvements.
+### Machine Learning Models Research
+Detailed theoretical research, application scenarios, and selection justifications for Random Forest, AdaBoost, and SVM can be found in the attached document:
+👉 [Read the full Models Research here](./models_research.md)
