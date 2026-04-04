@@ -18,11 +18,11 @@ def train_predict(learner, sample_size, X_train, y_train, X_test, y_test):
     end = time()
     results["pred_time"] = end - start
 
-    predictions_train = learner.predict(X_train_sub)
+    predictions_train = learner.predict(X_train[:300])
 
-    results["acc_train"] = accuracy_score(y_train_sub, predictions_train)
+    results["acc_train"] = accuracy_score(y_train[:300], predictions_train)
     results["acc_test"]  = accuracy_score(y_test, predictions_test)
-    results["f_train"]   = fbeta_score(y_train_sub, predictions_train, beta=0.5, zero_division=0)
+    results["f_train"]   = fbeta_score(y_train[:300], predictions_train, beta=0.5, zero_division=0)
     results["f_test"]    = fbeta_score(y_test, predictions_test,  beta=0.5, zero_division=0)
 
     print(f"{learner.__class__.__name__} trained on {sample_size} samples.")

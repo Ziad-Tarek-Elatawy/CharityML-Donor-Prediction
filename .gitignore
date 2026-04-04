@@ -33,3 +33,6 @@ Desktop.ini
 .vscode/
 .idea/
 *.swp
+
+# Ignore processed output datasets
+data/processed/*.csv
