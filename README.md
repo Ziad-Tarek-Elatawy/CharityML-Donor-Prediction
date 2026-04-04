@@ -106,6 +106,22 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+**4. Generate Processed Data (Important for Team Members):**
+Since the processed dataset (`census_cleaned.csv`) is not tracked in the repository to save space, you must generate it locally before running your specific notebooks. Put this code snippet at the top of your notebook to generate it:
+
+```python
+import sys
+import pandas as pd
+from time import time
+sys.path.append('../src')
+from data_prep import clean_and_preprocess, save_processed_data
+
+# Generate the cleaned data locally
+data = pd.read_csv('../data/raw/census.csv')
+features, income = clean_and_preprocess(data)
+save_processed_data(features, income, '../data/processed/census_cleaned.csv')
+```
+
 ---
 
 ## Usage
